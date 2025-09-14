@@ -1,0 +1,566 @@
+/* Who did what: team breakdown
+Font / Text: Gloria
+Layout design: Gloria
+Desktop-responsiveness: Dhiren
+Text sizing and spacing: Dhiren
+Buttons: Ibrahim
+DOM document: Ibrahim
+Navigational Elements: Dustin
+Javascript: Dustin
+Structure, consistency, quality control: Dustin
+*/
+
+/* Jimmy's Coffee – Help Center Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #2e1b0f;
+  line-height: 1.5rem;
+  background-color: #ffffff;
+  min-width: 290px;
+}
+
+.main-content-article {
+  background: #fff; /* or your site background */
+  border: 1px solid rgba(46, 27, 15, 0.2); /* 20% translucent border */
+  border-radius: 10px;
+  padding: 0.5rem 2rem 2rem 2rem;
+  margin: 2rem 0; /* or whatever separation you want */
+  box-shadow: 0 2px 8px rgba(46, 27, 15, 0.08); /* optional soft shadow */
+}
+
+@media (min-width: 701px) {
+  body {
+    background-image: url('../IMGs/coffeebeans.png');
+    background-color: #f3ffca;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+  }
+}
+
+/* Top Navigation Bar - Mobile first */
+.topnav {
+  width: 100%;
+  background-color: #f5d44a;
+  position: relative;
+  height: 80px;;
+  padding: 3rem;
+  border: 3px solid #2e1b0f;
+  outline: 1px solid #2e1b0f;
+  outline-offset: 2px;
+}
+
+@media (min-width: 701px) {
+  .topnav {
+    height: 150px;
+  }
+}
+
+/* Index Page Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.search-bar input[type="text"] {
+  width: 90%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 2rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+  border-color: #2e1b0f;
+}
+
+/* Hyperlinks under search bar */
+.common-links {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.common-links a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 0 0.25rem;
+}
+
+.common-links a:hover {
+  color: #964B00;
+  text-decoration: underline;
+}
+
+/* Centered logo */
+.topnav .logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  color: #000;
+  text-align: center;
+  pointer-events: none
+}
+
+/* Hamburger icon */
+.icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Dropdown menu */
+#myLinks {
+  display: none;
+  flex-direction: column;
+  background-color: #f5d44a;
+  width: max-content;
+  padding: 0.25rem;
+  margin-left: 0.25rem;
+  z-index: 1;
+  border: 0.15rem solid #2e1b0f;
+}
+
+#myLinks a {
+  padding: 0.15rem 0.25rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: #000;
+  display: block;
+  white-space: nowrap;
+  border: 0.15rem solid #2e1b0f;
+}
+
+#myLinks a:hover {
+  background-color: #e6c73f;
+  color: #000;
+}
+
+/* Main layout */
+main {
+  margin: 0 auto;
+  padding: 1rem;
+  padding-bottom: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+@media (min-width: 701px) {
+  main {
+    max-width: 850px;
+    padding: 0rem 2rem;
+    padding-bottom: 2.5rem;
+    text-align: left;
+    align-items: stretch;
+  }
+}
+h1 {
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 350; 
+  line-height: 40px;
+  border-bottom: 2px solid #2e1b0f; 
+}
+.heading-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+  border-bottom: 2px solid #401b01;
+}
+.heading-wrapper h1 {
+  margin: 0;
+  border-bottom: 1px solid #401b01; 
+}
+
+.heading-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: auto;
+}
+h2, h3 {
+  margin: 1rem 0 0.5rem;
+  line-height: 1.3;
+  text-align: left;
+}
+/* Paragraphs */
+p {
+  padding: 0.25rem 0;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  background-color: #f5d44a;
+  padding: 1rem;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 10px #602d0d;
+  z-index: 1000;
+  
+}
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+.footer-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+.footer-menu li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2e1b0f;
+  font-size: 0.95rem;
+}
+.footer-menu li a:hover {
+  text-decoration: underline;
+}
+/* Icon nav layout */
+.icon-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  margin: 0 auto;
+  width: fit-content;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.icon-nav img {
+  width: 289px;
+  height: 261px;
+  display: block;
+}
+@media (max-width: 700px) {
+  .icon-nav img {
+    width: 122px;   
+    height: 110px;   
+  }
+}
+.icon-nav a:nth-child(5) {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+.tile {
+  position: relative;
+}
+/* extra help banner */
+.extra-help-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;  
+  padding: 0.25rem .25rem;
+  max-width: 800px;
+  font-size: 1rem;
+  font-family: "Questrial", sans-serif;
+  text-align: center;
+  border-top: 1px dashed #ccc;
+  color: #401b01;
+}
+.extra-help-banner .help-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.extra-help-banner a {
+  color: #401b01;
+  text-decoration: underline;
+  font-style: normal; 
+}
+/* CTA text – mobile first*/
+.cta-text {
+  display: none;
+  margin-top: 0.5rem;
+  background-color: #f5d44a;
+  color: #2e1b0f;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'Questrial', sans-serif;
+  font-size: 0.75rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  line-height: 1.4;
+  max-width: 289px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+/* CTA text – desktop override */
+@media (max-width: 700px) {
+  .cta-text {
+    font-size: 0.65rem;
+    max-width: 130px;
+    padding: 0.4rem 0.5rem;
+    text-align: center;
+  }
+}
+.mobile-only {
+  display: inline;
+  text-align: center;
+}
+.desktop-only {
+  display: none;
+  text-align: center;
+}
+@media (min-width: 701px) {
+  .mobile-only {
+    display: none;
+    text-align: center;
+  }
+  .desktop-only {
+    display: inline;
+    text-align: center;
+  }
+}
+/* Optimized mobile layout */
+@media (max-width: 600px) {
+  .icon-nav {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .icon-nav a:nth-child(5) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .icon-tile {
+    width: 42vw;
+    max-width: 180px;
+    padding: 0.25rem;
+  }
+  .icon-tile img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* button overflow */
+.scroll-bar-wrapper {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-top: 0.2rem solid #4a1f04;
+  border-bottom: 0.45rem solid #4a1f04;
+  width: 100%;
+  overflow-x: auto;
+}
+.scroll-strip {
+  display: flex;
+  justify-content: center; 
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1000px; 
+  min-width: fit-content;
+  padding: 0 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll-strip .tile {
+  flex: 0 0 auto;
+  width: 80.28px;
+  height: 95px;
+  scroll-snap-align: start;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.scroll-strip .tile img {
+  width: 80.28px;
+  height: 95px;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  background-color: white; /* If you want a white background */
+}
+
+@media (min-width: 900px) {
+  .scroll-strip .tile {
+    width: 120px;   /* 80.28 × 1.5 */
+    height: 143px;  /* 95 × 1.5 */
+  }
+  .scroll-strip .tile img {
+    width: 120px;
+    height: 143px;
+  }
+}
+
+/* scrolling */
+html {
+  scroll-behavior: smooth;
+}
+/* Intro text */
+.intro-text p {
+  text-align: center;
+}
+
+/*BACK TO TOP BUTTON*/
+
+#myBtn {
+  position: fixed;
+  bottom: 30px;
+  left: auto;
+  right: 15px;
+  z-index: 99;
+  outline: 5px;
+  outline-color: #e6c73f;
+  background-color: #602d0d;
+  color: #f5d44a;
+  cursor: grab;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  opacity: 0.85;
+  transition: left 0.1s, right 0.1s;
+  touch-action: pan-y;
+}
+#myBtn:active {
+  cursor: grabbing;
+}
+#myBtn:hover {
+  background-color: #675200; 
+}
+@media screen and (min-width: 768px) {
+  #myBtn {
+    padding: 22px;
+    font-size: 28px;
+    opacity: 1;
+    border-radius: 14px;
+    right: 30px;
+    bottom: 30px;
+    outline: 10px;
+    outline-color:#e6c73f;
+    color: #602d0d;
+    background-color: #f5d44a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  #myBtn:hover {
+    background-color: #4a1f04;
+  }
+}
+/* Translucent drag indicator bar */
+#drag-indicator {
+  position: fixed;
+  left: 8vw; right: 8vw;
+  bottom: 18px;
+  height: 10px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent 10%, #ddd8 30%, #bbb8 70%, transparent 90%);
+  border-radius: 8px;
+  opacity: 0;
+  z-index: 98;
+  transition: opacity 0.3s;
+}
+#drag-indicator.visible {
+  opacity: 1;
+  transition: opacity 0.14s;
+}
+
+#drag-track {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 30px; /* Same as #myBtn for nice alignment */
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;   /* so it doesn't block button dragging */
+  z-index: 98;            /* just under the button */
+}
+
+.drag-line {
+  display: inline-block;
+  height: 4px;
+  background: linear-gradient(90deg, #bbb 0%, #f5d44a 50%, #bbb 100%);
+  border-radius: 2px;
+  width: 85vw;          /* Responsive; adjust as needed */
+  max-width: 720px;
+  min-width: 180px;
+  box-shadow: 0 1px 8px #2221;
+  opacity: 1;
+  transition: background 0.2s;
+}
+.drag-arrow {
+  font-size: 1.4em;
+  color:  #2e1b0f;  /* Main arrow color */
+  padding: 0 0.5em;
+  user-select: none;
+  opacity: 0.93;
+  /* Simulate "outline" with text-shadow: */
+  text-shadow:
+    0 0 2px#f5d44a,
+    0 0 5px#f5d44a,
+    1px 0 0 #f5d44a,
+    -1px 0 0#f5d44a,
+    0 1px 0 #f5d44a,
+    0 -1px 0 #f5d44a;
+}
+/*so footer works better*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 25vh;
+  margin: bottom 0.25rem;;
+}
+main {
+  flex: 1;
+  padding-bottom: 2.5rem;
+}
+footer {
+  background-color: #f5d44a;
+  padding: 1.25rem;
+  padding-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
