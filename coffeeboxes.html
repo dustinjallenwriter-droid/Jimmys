@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Created by Dhiren Pooran, cleaned for consistent heading design -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jimmy's Coffee - Coffee Boxes and Ordering</title>
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/app.css" />
+  <!-- Main JS -->
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <div id="page-wrapper">
+    <!-- top target for back to top button-->  
+    <div id="top"></div>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <!-- Hamburger Icon -->
+      <button class="icon" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+      <!-- Centered Logo -->
+      <div class="logo-text">Coffee<br>Boxes</div>
+    </div>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="menu.html">Menu</a>
+      <a href="shipping.html">Shopping</a>
+      <a href="policies.html">Store Policies</a>
+      <a href="helpsupport.html">Help & Support</a>
+      <a href="index.html">Home</a>
+    </div>
+    <!-- button menu / overflow -->
+    <!-- Background bar container for desktop -->
+    <div class="scroll-bar-wrapper">
+      <!-- Horizontally scrollable icon row -->
+      <div class="scroll-strip">
+        <a href="#howtoorder">
+          <article class="tile">
+            <img src="IMGs/Topic Button=How to Order.png" alt="How to Order" />
+          </article>
+        </a>
+        <a href="#processingtimes">
+          <article class="tile">
+            <img src="IMGs/Topic Button=Processing Times.png" alt="Processing Times" />
+          </article>
+        </a>
+        <a href="#donations">
+          <article class="tile">
+            <img src="IMGs/Topic Button=Donations.png" alt="Donations" />
+          </article>
+        </a>
+        <div class="scroll-padding-spacer"></div>
+      </div>
+    </div>
+    <!-- Main Content -->
+    <main>
+      <article class="main-content-article">
+        <div class="heading-wrapper">
+          <h1 id="whatsincluded">What’s Included</h1>
+          <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+        </div>
+        <p>Do you have an event coming up?<br>
+        We offer coffee boxes that can serve <b>10-12 people</b>!<br>
+        <br>Choose from our <b>full-bodied medium roast or bold dark roast.</b> Check out our menu to learn more about our <a href="menu.html#bean-options">Bean Options.</a></p>
+        <p>Each coffee box comes equipped with:</p>
+        <ul style="list-style-type:disc; padding-left: 2rem;">
+          <li>Cups, lids, and stir sticks</li>
+          <li>Cream, milk, or dairy alternative</li>
+          <li>Sugar and/or alternative sweetener</li>
+        </ul>
+      </article>
+      <article class="main-content-article">
+        <div class="heading-wrapper">
+          <h1 id="howtoorder">How to Order</h1>
+          <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+        </div>
+        <p>Feel free to place an order with us in-store, by phone, or through email.<br>
+        Email responses take <b>2–3 business days</b>, so for quicker service or same-day pickups, it’s best to call or stop by in person.<br>
+        You can choose to pay in-store at the time of ordering, or when you pick up your order if you’ve placed it by email or phone.<br>
+        Please provide the name and phone number of the person who will be picking it up, as well as your expected pick-up time when placing your order.
+        </p>
+      </article>
+      <article class="main-content-article">
+        <div class="heading-wrapper">
+          <h1 id="processingtimes">Processing Time</h1>
+          <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+        </div>
+        <p>The earlier we receive your order, the better! In some cases, we can put together a coffee box for you in about 15–20 minutes. This depends on the time of day and how busy the location is.</p>
+        <p>If you’re in the downtown area, feel free to call ahead to other locations to see if they might have an opportunity to fulfill your needs.</p>
+      </article>
+      <article class="main-content-article">
+        <div class="heading-wrapper">
+          <h1 id="donations">Donations</h1>
+          <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+        </div>
+        <p>Jimmy’s loves to give back to the community. Please send us an email at:</p>
+        <p><a href="mailto:jimmy@jimmyscoffee.ca">jimmy@jimmyscoffee.ca</a></p>
+        <p>Let us know about any special events or fundraisers that you are organizing and let us be a part of it.</p>
+      </article>
+    </main>
+    <!--back to top button and track-->
+    <div id="drag-track">
+      <span class="drag-arrow">&#8592;</span>
+      <span class="drag-line"></span>
+      <span class="drag-arrow">&#8594;</span>
+    </div>
+    <a href="#top" id="myBtn" class="back-to-top">&#8679;</a>
+    <!-- Footer Navigation -->
+    <footer>
+      <nav class="footer-nav">
+        <ul class="footer-menu">
+          <li><a href="shipping.html">Shopping</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="policies.html">Policies</a></li>
+          <li><a href="helpsupport.html">Help & Support</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
