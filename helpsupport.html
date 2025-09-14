@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+  <!-- Created by Dhiren Pooran, updated for new Help & Support layout -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jimmy's Coffee - Help & Support</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/app.css" />
+    <!-- Main JS -->
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div id="page-wrapper"></div>
+      <!-- top target for back to top button -->
+      <div id="top"></div>
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <button class="icon" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+        <div class="logo-text">Help &<br>Support</div>
+      </div>
+      <!-- Hidden Nav Menu -->
+      <div id="myLinks">
+        <a href="menu.html">Menu</a>
+        <a href="coffeeboxes.html">Coffee Boxes</a>
+        <a href="shipping.html">Shopping</a>
+        <a href="policies.html">Store Policies</a>
+        <a href="index.html">Home</a>
+      </div>
+      <!-- Icon Button Strip -->
+      <div class="scroll-bar-wrapper">
+        <div class="scroll-strip">
+          <a href="#orderissues">
+            <article class="tile">
+              <img src="IMGs/Topic Button=Order Issues.png" alt="Order Issues" />
+            </article>
+          </a>
+          <a href="#contactus">
+            <article class="tile">
+              <img src="IMGs/Topic Button=How to Contact Us.png" alt="Contact Us" />
+            </article>
+          </a>
+          <div class="scroll-padding-spacer"></div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <main>
+        <article class="main-content-article">
+          <div class="heading-wrapper">
+            <h1 id="orderissues">Order Issues</h1>
+            <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+          </div>
+          <p>Encountered a problem with your order? Let us know! Email or call us using the information below or fill out the contact form. We’re committed to fixing our mistakes and making sure you’re satisfied.</p>
+          <p>We offer refunds or speedy exchanges for incorrect or unsatisfactory orders. Just reach out and we’ll make it right.</p>
+        </article>
+        <article class="main-content-article">
+          <div class="heading-wrapper">
+            <h1 id="contactus">How to Contact Us</h1>
+            <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+          </div>
+          <p>Need to talk to someone?</p>
+          <ul style="list-style-type:disc; padding-left: 2rem;">
+            <li>Email: <b><a href="mailto:jimmy@jimmyscoffee.ca">jimmy@jimmyscoffee.ca</a></b></li>
+            <li>Phone: <b>(647) 352-5466</b></li>
+            <li>Or just visit any of our locations — we’re always happy to help!</li>
+          </ul>
+        </article>
+      </main>
+      <!--back to top button and track-->
+      <div id="drag-track">
+        <span class="drag-arrow">&#8592;</span>
+        <span class="drag-line"></span>
+        <span class="drag-arrow">&#8594;</span>
+      </div>
+      <a href="#top" id="myBtn" class="back-to-top">&#8679;</a>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <nav class="footer-nav">
+          <ul class="footer-menu">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="coffeeboxes.html">Coffee Boxes</a></li>
+            <li><a href="shipping.html">Shopping</a></li>
+            <li><a href="policies.html">Policies</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

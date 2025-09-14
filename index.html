@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Created by Dustin Allen -->
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts--> 
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/app.css" />
+  <!-- Main jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Top Navigation Menu -->
+        <div class="topnav">  
+      <!-- Hamburger Icon -->
+          <button class="icon" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+      <!-- Centered Logo -->
+          <div class="logo-text">Help<br>Center</div>
+        </div>  
+      <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="menu.html">Menu</a>
+          <a href="shipping.html">Shipping & Gift Cards</a>
+          <a href="policies.html">Store Policies</a>
+          <a href="helpsupport.html">Help & Support</a>
+          <a href="coffeeboxes.html">Coffee Boxes</a>
+        </div>  
+      <!-- Main Layout -->
+       <main>
+          <div class="intro-text">     
+            <article>
+              <p>How's it going?</p>
+              <p>
+                <span class="desktop-only">Click a tile</span>
+                <span class="mobile-only">Tap a tile</span>
+                to learn about our help topics.
+              </p>
+            </article>
+          </div>
+          <!-- Icon Grid -->
+          <div class="icon-nav">
+            <article class="tile" data-link="menu.html">
+              <picture>
+                <source media="(max-width: 700px)"/>
+                <img src="IMGs/menu_icon.png" alt="Menu icon" />
+              </picture>
+              <div class="cta-text">
+                <span class="desktop-only">
+                  Curious about our food and drink options?<br>
+                  <strong><a href="menu.html">Click here.</a></strong>
+                </span>
+                <span class="mobile-only">
+                  Curious about our food and drink options?<br>
+                  <strong><a href="menu.html">Tap here.</a></strong>
+                </span>
+              </div>
+            </article>
+            <article class="tile" data-link="coffeeboxes.html">
+              <picture>
+                <source media="(max-width: 700px)"/>
+                <img src="IMGs/Frame 5.png" alt="Coffee Boxes" />
+              </picture>
+              <div class="cta-text">
+                <span class="desktop-only">
+                  Not sure how to order your large batch of coffee for a meeting or event?<br>
+                  <strong><a href="coffeeboxes.html">Click here.</a></strong>
+                </span>
+                <span class="mobile-only">
+                  Not sure how to order your large batch of coffee for a meeting or event?<br>
+                  <strong><a href="coffeeboxes.html">Tap here.</a></strong>
+                </span>
+              </div>
+            </article>
+            <article class="tile" data-link="shipping.html">
+              <picture>
+                <source media="(max-width: 700px)" />
+                <img src="IMGs/merch_icon.png" alt="Shopping icon" />
+              </picture>
+              <div class="cta-text">
+                <span class="desktop-only">
+                  Questions about ordering merch or buying gift cards?<br>
+                  <strong><a href="shipping.html">Click here.</a></strong>
+                </span>
+                <span class="mobile-only">
+                  Questions about ordering merch or buying gift cards?<br>
+                  <strong><a href="shipping.html">Tap here.</a></strong>
+                </span>
+              </div>
+            </article>
+            <article class="tile" data-link="policies.html">
+              <picture>
+                <source media="(max-width: 700px)" />
+                <img src="IMGs/policy_icon.png" alt="Policies icon" />
+              </picture>
+              <div class="cta-text">
+                <span class="desktop-only">
+                  Wondering about our laptop, pet, or refund policies? Maybe just our store hours?<br>
+                  <strong><a href="policies.html">Click here.</a></strong>
+                </span>
+                <span class="mobile-only">
+                  Wondering about our laptop, pet, or refund policies? Maybe just our store hours?<br>
+                  <strong><a href="policies.html">Tap here.</a></strong>
+                </span>
+              </div>
+            </article>
+          </div>
+          <!-- Help and Support-->
+          <div class="extra-help-banner">
+            <img src="IMGs/helpandsupport_icon.png" alt="Help icon" class="help-icon" />
+            <p>If your query falls outside these topics, <b><a href="helpsupport.html">we're still here to help</a>.</b></p>
+          </div>   
+        </div>   
+      </main>
+        <!-- Footer -->
+      <footer>
+        <nav class="footer-nav">
+          <ul class="footer-menu">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="coffeeboxes.html">Coffee Boxes</a></li>
+            <li><a href="shipping.html">Shopping</a></li>
+            <li><a href="policies.html">Policies</a></li>
+            <li><a href="helpsupport.html">Help & Support</a></li>
+           </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

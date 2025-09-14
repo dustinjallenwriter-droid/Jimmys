@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Created by Gloria Pham -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jimmy's Coffee - Store Policies</title>
+    <!-- Google Fonts-->
+   <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/app.css" />
+    <!-- Main JS -->
+    <script src="js/app.js" defer></script>
+    </head>
+    <body>
+    <div class="page-wrapper">
+      <!-- top target for back to top button-->  
+      <div id="top"></div>
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <!-- Hamburger Icon -->
+        <button class="icon" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+        <!-- Centered Logo -->
+        <div class="logo-text">Store<br>Policies</div>
+      </div>
+      <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="coffeeboxes.html">Coffee Boxes</a>
+        <a href="shipping.html">Shopping</a>
+        <a href="menu.html">Menu</a>
+        <a href="helpsupport.html">Help & Support</a>
+        <a href="index.html">Home</a>
+    </div>
+      <!-- button menu / overflow -->
+      <!-- Background bar container for desktop -->
+      <div class="scroll-bar-wrapper">
+        <!-- Horizontally scrollable icon row -->
+        <div class="scroll-strip">
+          <a href="#storehours">
+            <article class="tile">
+              <img src="IMGs/Topic Button=Store Hours.png" alt="Store Hours" />
+            </article>
+          </a>
+          <a href="#holidayhours">
+            <article class="tile">
+              <img src="IMGs/Topic Button=Holiday Hours.png" alt="Holiday Hours" />
+            </article>
+          </a>
+          <a href="#togo">
+            <article class="tile">
+              <img src="IMGs/Topic Button=For Here or To Go.png" alt="For Here or To Go" />
+            </article>
+          </a>
+          <a href="#payment">
+            <article class="tile">
+              <img src="IMGs/Topic Button=Payment Types.png" alt="Payment Types" />
+            </article>
+          </a>
+          <a href="#pets">
+            <article class="tile">
+              <img src="IMGs/Topic Button=Pet Policy.png" alt="Pet Policy" />
+            </article>
+          </a>
+          <a href="#refunds">
+            <article class="tile">
+              <img src="IMGs/Topic Button=Refunds and Exchanges.png" alt="Refunds and Exchanges" />
+            </article>
+          </a>
+          <a href="#accessibility">
+            <article class="tile">
+              <img src="IMGs/Topic Button=Accessibility.png" alt="Accessibility" />
+            </article>
+          </a>
+          <a href="#laptop">
+            <article class="tile">
+              <img src="IMGs/Topic Button=Laptop Policy.png" alt="Laptop Policy" />
+            </article>
+          </a>
+          <div class="scroll-padding-spacer"></div>
+        </div>
+      </div>
+      <!-- Main Content -->
+      <main>
+        <article class="main-content-article">
+          <div class="heading-wrapper">
+            <h1 id="storehours">Store Hours</h1>
+            <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+          </div>
+          <p><b>Generally, Jimmy’s locations are open from:</b></p><br>
+          <ul style="list-style-type:disc; padding-left: 2rem;">
+            <li>Monday–Friday 7AM–6PM</li>
+            <li>Saturday–Sunday 8AM–6PM</li><br>
+          </ul>
+          <p><b>With the following exceptions:</b></p><br>
+          <ul style="list-style-type:disc; padding-left: 2rem;">
+            <li>Gerrard Sat-Sun: 8AM-<b>5PM</b></li>
+            <li>McCaul Sat-Sun: 8AM-<b>5PM</b></li>
+            <li>Kensington Sat-Sun: 8AM-<b>7PM</b></li>
+            <li>Queen West <b>Mon-Sun: 7:30AM</b>-6PM</li>
+          </ul>
+        </article>
+        <article class="main-content-article">
+          <div class="heading-wrapper">
+            <h1 id="holidayhours">Holiday Hours</h1>
+            <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+          </div>
+          <p>Jimmy’s locations are usually open on every holiday except Christmas Day.<br>
+          For the latest holiday hours, check our <a href="https://www.instagram.com/jimmys_coffee">Instagram</a></b>
+          or view each store’s in-depth info on <b><a href="https://www.google.com/search?q=jimmy%27s+coffee+toronto">Google Maps</a></b>.
+          </p>
+        </article>
+        <article class="main-content-article">
+          <div class="heading-wrapper">
+            <h1 id="togo">For Here or To Go</h1>
+            <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+          </div>
+          <p>All drinks are currently served in takeout cups, but you’re welcome to enjoy them in-store at any of our locations.
+            <b>Get 25¢ off your drink if you bring your own mug!</b></p>
+        </article>
+        <article class="main-content-article">
+          <div class="heading-wrapper">
+            <h1 id="payment">Payment Types</h1>
+            <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+          </div>
+          <p>Jimmy’s is cashless, but we accept all major debit and credit cards.</p>
+        </article>
+        <article class="main-content-article">
+          <div class="heading-wrapper">
+            <h1 id="pets">Pet Policy</h1>
+            <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+          </div>
+          <p>You're welcome to use your laptop for as long as you would like.<br> 
+            Seating at our locations is first-come, first-serve. Wi-Fi is available at all of our locations.</p>
+        </article>
+        <article class="main-content-article">
+          <div class="heading-wrapper">
+            <h1 id="refunds">Refunds and Exchanges</h1>
+            <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+          </div>
+          <p>Well-behaved pets are welcome at these locations:</p>
+          <ul style="list-style-type:disc; padding-left: 2rem;">
+            <li>Kensington Market (191 Baldwin Street)</li>
+            <li>Royal York/Mimico (380 Royal York Road)</li>
+          </ul>
+          <p>For other locations, please check with staff for guidelines.</p>
+        </article>
+        <article class="main-content-article">
+          <div class="heading-wrapper">
+            <h1 id="accessibility">Accessibility</h1>
+            <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+          </div>
+          <p>We strive to accommodate all customers! Here’s a quick overview of our location accessibility features:</p>
+          <ul style="list-style-type:disc; padding-left: 2rem;">
+            <li><strong>191 Baldwin St</strong> – Free Wi-Fi | Indoor & Outdoor Seating | Takeout | Wheelchair Accessible</li>
+            <li><strong>84 Gerrard St W</strong> – Free Wi-Fi | Indoor Seating | Takeout</li>
+            <li><strong>166 McCaul St</strong> – Free Wi-Fi | Indoor Seating | Takeout | Wheelchair Accessible</li>
+            <li><strong>107 Portland St</strong> – Free Wi-Fi | Indoor & Outdoor Seating | Takeout</li>
+            <li><strong>15 Ossington Ave</strong> – Free Wi-Fi | Indoor & Outdoor Seating | Takeout | Wheelchair Accessible</li>
+          </ul>
+        </article>
+        <article class="main-content-article">
+          <div class="heading-wrapper">
+            <h1 id="laptop">Laptop Policy</h1>
+            <img src="IMGs/beansh1.png" alt="Coffee beans" class="heading-icon" />
+          </div>
+          <p>We don't have hard rules re: laptops... but.</p>
+          <p>Be mindful and respectful</p>
+        </article>
+      <!--back to top button and track-->
+      <div id="drag-track">
+        <span class="drag-arrow">&#8592;</span>
+        <span class="drag-line"></span>
+        <span class="drag-arrow">&#8594;</span>
+      </div>
+      <a href="#top" id="myBtn" class="back-to-top">&#8679;</a>
+      </main>
+      <!-- Footer Navigation -->
+      <footer>
+        <nav class="footer-nav">
+          <ul class="footer-menu">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="coffeeboxes.html">Coffee Boxes</a></li>
+            <li><a href="shipping.html">Shopping</a></li>
+            <li><a href="helpsupport.html">Help & Support</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

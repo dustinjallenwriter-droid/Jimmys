@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <!-- Created by Ibrahim Parkar -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jimmy's Coffee Help Center - Menu</title>
+
+    <!-- Google Fonts: Questrial (default), Bree (h1 only) -->
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/app.css" />
+
+    <style>
+/* CHALKBOARD STYLE MENU */
+
+/* Background + overlay texture */
+main {
+  background: url('../IMGs/chalkboard_texture.jpg') center/cover no-repeat;
+  background-color: #2F4F2F; /* fallback */
+  position: relative;
+  padding: 2rem;
+  color: yellow;
+  border: 4px dashed #ccc;
+}
+
+/* Optional chalk dust overlay */
+main::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('../IMGs/chalk_dust_overlay.png') repeat;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Apply chalk font to all headings and paragraphs */
+h1, h2, h3{
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: bold;
+  font-style: normal;
+  color: hsl(62, 75%, 60%); 
+  text-shadow: 1px 1px 0 #444;
+  border-bottom: 2px dotted whitesmoke;
+}
+
+p{
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: normal;
+  font-style: normal;
+  color: white; 
+  text-shadow: 1px 1px 0 #444;
+  border-bottom: 2px dotted whitesmoke;
+}
+
+/* List items (yellow, chalky) */
+li {
+  color: yellow;
+  margin-bottom: 5px;
+  border-bottom: 1px dotted white;
+  padding-bottom: 5px;
+  text-shadow: 1px 1px 0 #444;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+/* Table styling */
+table, td {
+  border-style: solid 8px;
+  border-top: 5px;
+  color: white;
+  border-spacing: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: "Gloria Hallelujah", cursive;
+  text-shadow: 1px 1px 0 #444;
+}
+
+th {
+  color: white;
+  text-shadow: 1px 1px 0 #444;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.footer-menu, 
+.footer-menu a { 
+  font-family: 'Questrial', sans-serif; 
+  color: #fff;   /* Adjust color if preferred */
+  font-size: 1.05em;  /* Optional: tweak as needed */
+  text-shadow: none;  /* Optional: to remove chalk shadow if you don't want it */
+  border-bottom: none; /* Removes dotted border if inherited */
+}
+    </style>
+
+    <!-- Main JS -->
+    <script src="js/app.js" defer></script>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <div id="top"></div>
+
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <button class="icon" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+        <div class="logo-text">Menu</div>
+      </div>
+      <div id="myLinks">
+          <a href="coffeeboxes.html">Coffee Boxes</a>
+          <a href="shipping.html">Shopping</a>
+          <a href="policies.html">Store Policies</a>
+          <a href="helpsupport.html">Help & Support</a>
+          <a href="index.html">Home</a>
+      </div>
+
+      <!-- Scrollable Button Bar -->
+      <div class="scroll-bar-wrapper">
+        <div class="scroll-strip">
+          <a href="#drinks"><article class="tile"><img src="IMGs/Topic Button=Drink Menu.png" alt="Hot Drinks" /></article></a>
+          <a href="#baked"><article class="tile"><img src="IMGs/Topic Button=Baked Goods.png" alt="Baked Goods" /></article></a>
+          <a href="#beans"><article class="tile"><img src="IMGs/Topic Button=Bean Options.png" alt="Beans" /></article></a>
+          <a href="#offers"><article class="tile"><img src="IMGs/Topic Button=Promotions and Offers.png" alt="Offers" /></article></a>
+          <a href="#allergens"><article class="tile"><img src="IMGs/Topic Button=Allergen Info.png" alt="Allergens" /></article></a>
+          <div class="scroll-padding-spacer"></div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <main>
+        <section id="drinks">
+          <h1>Drinks</h1>
+          <p>Choose from our always available menu of tasty beverages!</p>
+          <!-- Table 1 -->
+          <table style="width:100%">
+            <colgroup><col style="width: 40%;"><col><col><col></colgroup>
+            <tr><th>Hot Drinks</th><th>8oz</th><th>12oz</th><th>16oz</th></tr>
+            <tr><td>Brewed Coffee</td><td>2.50</td><td>2.75</td><td>3.00</td></tr>
+            <tr><td>Latte</td><td>4.20</td><td>4.50</td><td>4.75</td></tr>
+            <tr><td>Cappuccino</td><td>4.20</td><td>4.50</td><td>4.75</td></tr>
+            <tr><td>Flat White</td><td>4.20</td><td>4.50</td><td>4.75</td></tr>
+            <tr><td>Jimmy's Very Own Mocha</td><td>2.50</td><td>2.75</td><td>3.00</td></tr>
+            <tr><td>Hot Chocolate</td><td>2.50</td><td>2.75</td><td>3.00</td></tr>
+            <tr><td>Tea</td><td>2.50</td><td>2.75</td><td>3.00</td></tr>
+            <tr><td>Tea Latte</td><td>2.50</td><td>2.75</td><td>3.00</td></tr>
+            <tr><td>Chai Matcha Latte</td><td>2.50</td><td>2.75</td><td>3.00</td></tr>
+          </table>
+
+          <!-- Table 2 -->
+          <table style="width:100%">
+            <colgroup><col style="width: 40%;"><col><col><col></colgroup>
+            <tr><th>Espresso</th><th>Single</th><th>Double</th><th>Triple</th></tr>
+            <tr><td>Americano</td><td>2.50</td><td>3.25</td><td>4.00</td></tr>
+            <tr><td>Macchiato</td><td>3.00</td><td>3.50</td><td>4.20</td></tr>
+            <tr><td>Cortado</td><td>3.25</td><td>3.75</td><td>4.25</td></tr>
+          </table>
+
+          <!-- Seasonal Drinks -->
+          <p>Check out our rotating seasonal menu.</p>
+
+          <table style="width:100%">
+            <colgroup><col style="width: 40%;"><col><col><col></colgroup>
+            <tr><th>Hot Seasonal Drinks</th><th>8oz</th><th>12oz</th><th>16oz</th></tr>
+            <tr><td>Lavender Mocha</td><td>5.75</td><td>6.00</td><td>6.25</td></tr>
+            <tr><td>Lavender Hot Chocolate</td><td>5.25</td><td>5.50</td><td>5.75</td></tr>
+            <tr><td>Honey Cinnamon Latte</td><td>5.75</td><td>6.00</td><td>6.25</td></tr>
+          </table>
+
+          <table style="width:100%">
+            <colgroup><col style="width: 60%;"><col><col></colgroup>
+            <tr><th>Cold Seasonal Drinks</th><th>12oz</th><th>20oz</th></tr>
+            <tr><td>Cold Brew</td><td>4.05</td><td>4.65</td></tr>
+            <tr><td>Iced Tea</td><td>3.65</td><td>4.00</td></tr>
+          </table>
+        </section>
+
+        <section>
+          <h2>Modifiers</h2>
+          <p>As always, tell us what you like and we'll take it from there.</p>
+          <table style="width:100%">
+            <tr><th>Modifier</th><th>Price</th></tr>
+            <tr><td>Steamed Milk</td><td>0.60</td></tr>
+            <tr><td>Soy/Almond/Lactose Free/Coconut/Oat Milk</td><td>0.85</td></tr>
+            <tr><td>Espresso Shot</td><td>0.85</td></tr>
+            <tr><td>Flavour Shot</td><td>0.85</td></tr>
+          </table>
+        </section>
+
+        <section id="baked">
+          <h2>Baked Goods</h2>
+          <p>Too tasty to pass up.</p>
+          <table style="width:100%">
+            <tr><th>Pastries</th><th>Price</th></tr>
+            <tr><td>Muffins</td><td>4.00</td></tr>
+            <tr><td>Scones</td><td>4.00</td></tr>
+            <tr><td>(V/GF) Cookies</td><td>4.00</td></tr>
+            <tr><td>(V/GF) Loaves</td><td>8.00 or 6.00 for half</td></tr>
+            <tr><td>Croissants</td><td>4.00</td></tr>
+          </table>
+        </section>
+
+        <section id="beans">
+          <h1 id="bean options">Bean Options</h1>
+          <p>Our coffee products are specially crafted using our in-house, whole-bean blends.</p>
+
+          <h2>The Hoffa Blend</h2>
+          <p>Our signature light-medium espresso blend. Bright and sweet with hints of caramel and a lingering cocoa finish.</p>
+
+          <h2>Carter Decaf</h2>
+          <p>Decaffeinated using a slow Swiss water process, this blend offers full flavor without the buzz.</p>
+
+          <h2>The Dean</h2>
+          <p>Bright and sweet with notes of caramel. A light-medium espresso roast designed for balance and smoothness.</p>
+
+          <h2>The Hendrix</h2>
+          <p>A bold blend with warm notes of cocoa, caramel, and roasted almond. Perfect for drip or espresso.</p>
+        </section>
+
+        <section id="offers">
+          <h1>Promotions and Offers</h1>
+          <p>Our Americano is now just $2.50! Treat yourself to a cup of joy without breaking the bank.</p>
+          <p>Grab a 12oz Drip Coffee plus a Muffin or Scone for only $5!</p>
+          <p>Try our Lavender Mocha — espresso meets floral notes in a calming, delicious twist.</p>
+        </section>
+
+          <section id="allergens">
+            <h1>Allergen Information</h1>
+            <p>We offer dairy-free alternatives like oat, almond, and soy milk. Just ask your barista!</p>
+            <p>Look for Vegan and Gluten-Free tags on select baked goods in our Pastries section.</p>
+            <p>Still unsure? Our team is happy to walk you through any questions or concerns.</p>
+          </section>
+              <!-- Back to Top Button -->
+      <!--back to top button and track-->
+      <div id="drag-track">
+        <span class="drag-arrow">&#8592;</span>
+        <span class="drag-line"></span>
+        <span class="drag-arrow">&#8594;</span>
+      </div>
+      <a href="#top" id="myBtn" class="back-to-top">&#8679;</a>
+      </main>
+      </main>
+        <!-- Footer -->
+        <footer>
+          <nav class="footer-nav">
+            <ul class="footer-menu">
+              <li><a href="shipping.html">Shopping</a></li>
+              <li><a href="coffeeboxes.html">Coffee Boxes</a></li>
+              <li><a href="policies.html">Policies</a></li>
+              <li><a href="helpsupport.html">Help & Support</a></li>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </nav>
+        </footer>
+  </body>
+</html>
