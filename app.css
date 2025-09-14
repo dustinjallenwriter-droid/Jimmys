@@ -1,15 +1,3 @@
-/* Who did what: team breakdown
-Font / Text: Gloria
-Layout design: Gloria
-Desktop-responsiveness: Dhiren
-Text sizing and spacing: Dhiren
-Buttons: Ibrahim
-DOM document: Ibrahim
-Navigational Elements: Dustin
-Javascript: Dustin
-Structure, consistency, quality control: Dustin
-*/
-
 /* Jimmy's Coffee – Help Center Styles */
 * {
   box-sizing: border-box;
@@ -563,4 +551,5 @@ footer {
   text-align: center;
   width: 100%;
 }
+
 
